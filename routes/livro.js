@@ -9,9 +9,11 @@ import {
 
 const router = Router();
 
-router.get("/", getLivros);
 router.get("/:id", getLivro);
+router.get("/", getLivros);
+
 router.post("/", postLivro);
+
 router.patch("/:id", patchLivro);
 
 router.delete("/:id", deleteLivro);
